@@ -1,12 +1,12 @@
 import React from "react";
-import { View, Image, StyleSheet, TextInput, TouchableOpacity, StatusBar } from "react-native";
+import { View, Image, StyleSheet, SafeAreaView, TouchableOpacity, StatusBar } from "react-native";
 import { Text, Header } from "../../Common";
 import { NumBackArrow, DownArrow, Avatar, FaceId } from '../../Assets/Icons';
 import { SvgXml } from "react-native-svg";
 
 const SignInWithEmail = () => {
     return (
-        <View style={styles.main}>
+        <SafeAreaView style={styles.main}>
             <StatusBar barStyle={'light-content'}/>
 
             <Image style={styles.avatar} source={Avatar} />
@@ -24,7 +24,7 @@ const SignInWithEmail = () => {
 
 
 
-            <View style={{ alignItems: 'center' }}>
+            <View style={{ alignItems: 'center' , flex : 1 }}>
 
                 <View style={styles.numbermainView}>
                     <View style={styles.numberRow}>
@@ -61,20 +61,20 @@ const SignInWithEmail = () => {
 
             </View>
 
-        </View>
+        </SafeAreaView>
     )
 }
 
 const styles = StyleSheet.create({
     main: { flex: 1 },
-    avatar: { alignSelf: 'center', marginTop: 20 },
+    avatar: { alignSelf: 'center', marginVertical: 20  , height : 80 , width : 80  },
     midtxt: { textAlign: 'center', color: '#484848', fontSize: 15, },
     midtxtBtm: { textAlign: 'center', color: '#998CFF', fontSize: 17, marginTop: 15 },
     codeDotView: { marginTop: 50, flexDirection: 'row', alignItems: 'center', justifyContent: 'center' },
     codeDotEmp: { width: 12, height: 12, backgroundColor: '#C7C7C7', borderRadius: 30, marginHorizontal: 10, },
     codeDotFill: { width: 12, height: 12, backgroundColor: '#998CFF', borderRadius: 30, marginHorizontal: 10, },
     btmtxt: { color: '#484848', marginBottom: 10, fontSize: 17 },
-    bottomView: { margin: 10, position: 'absolute', bottom: 0, left: 0, right: 0, alignItems: 'center', },
+    bottomView: { margin: 10,  alignItems: 'center', },
 
 
     numbermainView: {marginTop:20, justifyContent: 'center', padding: 10, borderRadius: 20,  width: 300, height: 340 },

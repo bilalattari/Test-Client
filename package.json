@@ -1,5 +1,5 @@
 {
-  "name": "expensetracker",
+  "name": "testing",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -15,14 +15,17 @@
     "@react-native-picker/picker": "^1.9.10",
     "@react-navigation/native": "^5.8.0",
     "@react-navigation/stack": "^5.10.0",
+    "i": "^0.3.6",
     "install": "^0.13.0",
-    "npm": "^6.14.8",
+    "npm": "^6.14.11",
     "react": "16.13.1",
     "react-native": "0.63.3",
     "react-native-collapsible": "^1.5.3",
     "react-native-confirmation-code-field": "^6.5.1",
+    "react-native-country-picker-modal": "^2.0.0",
     "react-native-gesture-handler": "^1.8.0",
     "react-native-reanimated": "^1.13.1",
+    "react-native-rename": "^2.7.0",
     "react-native-safe-area-context": "^3.1.8",
     "react-native-screens": "^2.11.0",
     "react-native-svg": "^12.1.0"

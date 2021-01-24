@@ -9,7 +9,7 @@ import {
 } from 'react-native-confirmation-code-field';
 
 const styles = StyleSheet.create({
-    root: { flex: 1, padding: 20 },
+    root: { flex: 1, margin: 20 },
     title: { textAlign: 'center', fontSize: 30 },
     codeFieldRoot: { marginTop: 20 },
     cell: {
@@ -18,8 +18,9 @@ const styles = StyleSheet.create({
         lineHeight: 38,
         fontSize: 28,
         color: '#484848',
-        borderBottomWidth: 1,
-        borderBottomColor: '#00000030',
+        borderWidth: 1,
+        borderRadius : 7,
+        borderColor: '#AF9CFF',
         textAlign: 'center',
     },
     separator: {
@@ -29,8 +30,9 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
     },
     focusCell: {
-        borderBottomWidth: 1,
-        borderBottomColor: '#000',
+        borderWidth: 1,
+        borderRadius : 7,
+        borderColor: '#AF9CFF',
     },
 });
 
