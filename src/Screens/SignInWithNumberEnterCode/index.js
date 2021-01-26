@@ -1,5 +1,6 @@
 import React from "react";
-import { View, SafeAreaView, StyleSheet, TextInput, TouchableOpacity, StatusBar } from "react-native";
+import { View, SafeAreaView, StyleSheet,  TouchableOpacity, StatusBar } from "react-native";
+
 import { Text, Header, CodeInput } from "../../Common";
 
 const SignInWithNumberEnterCode = ({ navigation }) => {
@@ -15,7 +16,6 @@ const SignInWithNumberEnterCode = ({ navigation }) => {
                 <CodeInput navigation={navigation} />
             </View>
 
-            {/* <TextInput keyboardType='numeric' style={styles.input} placeholderTextColor={'#C7C7C7'} placeholder={'Phone Number'} /> */}
 
             <View style={styles.bottomView}>
                 <TouchableOpacity>

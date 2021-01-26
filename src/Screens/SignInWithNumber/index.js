@@ -1,16 +1,14 @@
 import React, { useState } from "react";
 import { View, SafeAreaView, StyleSheet, TextInput, TouchableOpacity, StatusBar } from "react-native";
 import { Text, Header } from "../../Common";
-import { Picker } from '@react-native-picker/picker';
 import PhoneInput from 'react-native-phone-input'
 
 const SignInWithNumber = ({ navigation }) => {
-    const [code, setCode] = useState();
     return (
         <SafeAreaView style={styles.main}>
             <Header navigation={navigation} />
             <StatusBar barStyle={'light-content'} />
-            
+
             <View style={{ flex: 1 }}>
                 <Text style={styles.midtxt}>With your phone number</Text>
                 <View style={styles.numberInputView}>

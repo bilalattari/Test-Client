@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { View, Image, StyleSheet, SafeAreaView, TouchableOpacity, StatusBar } from "react-native";
 import { SvgXml } from "react-native-svg";
 
-import { Text, Header } from "../../Common";
+import { Text } from "../../Common";
 import { NumBackArrow, DownArrow, Avatar, FaceId } from '../../Assets/Icons';
 import { Colors } from '../../Styles'
 
@@ -51,10 +51,6 @@ const SignInWithEmail = () => {
                         })
                     }
                 </View>
-
-
-
-
 
 
                 <View style={styles.numbermainView}>
