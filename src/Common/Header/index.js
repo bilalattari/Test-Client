@@ -19,7 +19,7 @@ const Header = ({navigation}) =>
 
 const styles = StyleSheet.create({
     main:{ padding:10, paddingTop:20,},
-    signintxt:{marginTop:20, color:'#AF9CFF', fontSize:46, fontFamily:Typography.FONT_FAMILY_BOLD}
+    signintxt:{marginTop:20, color:Colors.LIGHTPURPLE, fontSize:46, fontFamily:Typography.FONT_FAMILY_BOLD}
 })
 
 export default Header;

@@ -7,32 +7,34 @@ import {
     useBlurOnFulfill,
     useClearByFocusCell,
 } from 'react-native-confirmation-code-field';
+import { LIGHTPURPLE } from '../../Styles/colors';
 
 const styles = StyleSheet.create({
-    root: { flex: 1, margin: 20 },
+    root: { flex: 1, margin: 20, width: 250, alignSelf: "center" },
     title: { textAlign: 'center', fontSize: 30 },
-    codeFieldRoot: { marginTop: 20 },
+    codeInputView: {
+        borderBottomColor: "#C7C7C7", borderBottomWidth: 1,
+        alignItems: "center", justifyContent: "center"
+    },
     cell: {
-        width: 40,
+        width: 20,
         height: 40,
         lineHeight: 38,
         fontSize: 28,
         color: '#484848',
-        borderWidth: 1,
-        borderRadius : 7,
-        borderColor: '#AF9CFF',
+
+        borderRadius: 7,
         textAlign: 'center',
     },
     separator: {
         height: 2,
         width: 10,
         backgroundColor: '#000',
-        alignSelf: 'center',
+        position: "absolute",
+        left: 28
     },
     focusCell: {
-        borderWidth: 1,
-        borderRadius : 7,
-        borderColor: '#AF9CFF',
+        borderRadius: 7,
     },
 });
 
@@ -69,7 +71,8 @@ const CodeInput = ({ navigation }) => {
                 keyboardType="number-pad"
                 textContentType="oneTimeCode"
                 renderCell={({ index, symbol, isFocused }) => (
-                    <Fragment key={index}>
+                    <View key={index}
+                        style={[styles.codeInputView, isFocused && { borderBottomColor: LIGHTPURPLE }]}>
                         <Text
                             key={`value-${index}`}
                             style={[styles.cell, isFocused && styles.focusCell]}
@@ -79,7 +82,7 @@ const CodeInput = ({ navigation }) => {
                         {index === 2 ? (
                             <View key={`separator-${index}`} style={styles.separator} />
                         ) : null}
-                    </Fragment>
+                    </View>
                 )}
             />
         </SafeAreaView>
